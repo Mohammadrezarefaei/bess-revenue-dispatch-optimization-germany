@@ -1,4 +1,8 @@
-![BESS Engine CI](https://github.com/Mohammadrezarefaei/bess-revenue-dispatch-optimization-germany/actions/workflows/ci.yml/badge.svg)
+[![BESS Engine CI](https://github.com/Mohammadrezarefaei/bess-revenue-dispatch-optimization-germany/actions/workflows/ci.yml/badge.svg)](https://github.com/Mohammadrezarefaei/bess-revenue-dispatch-optimization-germany/actions)
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://bess-dispatch-germany.streamlit.app/)
+
+## 🚀 Live Interactive Demo
+👉 **[Access the Live Streamlit Web App](لینک_استریم‌لیت_خودت)**
 # 🔋 BESS Dispatch Optimization & Techno-Economic Financial Modeling (German Day-Ahead Market)
 
 An end-to-end techno-economic simulation, dispatch optimization pipeline, and Discounted Cash Flow (DCF) financial model for a **10 MW / 20 MWh Utility-Scale Battery Energy Storage System (BESS)** operating in the German wholesale electricity market (**EPEX Spot / SMARD**).
@@ -42,3 +46,17 @@ An end-to-end techno-economic simulation, dispatch optimization pipeline, and Di
 * **Language:** Python 3.10+
 * **Data & Numerical Optimization:** `pandas`, `numpy`
 * **Visualization:** `matplotlib`
+* ---
+
+## 🔍 Honest Model Validation & Regime Boundary Analysis
+
+In line with quantitative model validation standards, the dispatch algorithm's performance has been evaluated across distinct market regimes:
+* **Profitable Regime (High Spread):** When daily spreads exceed **€38.20/MWh**, the engine executes full arbitrage cycles, yielding positive net EBITDA.
+* **Flat Baseload Regime (Breakdown / Boundary Limit):** During periods with minimal intraday volatility (spreads $< €35.00/\text{MWh}$), the optimizer halts cycling to prevent uncompensated battery degradation.
+* **Strategic Implication:** Pure wholesale arbitrage is insufficient during flat price periods; assets must transition to multi-market revenue stacking by allocating capacity to **FCR (Primary Control)** and **aFRR (Secondary Reserve)**.
+
+---
+
+## 🛠️ Software Architecture & Automated Testing
+* **CI/CD Pipeline:** Fully automated testing via **GitHub Actions** (`pytest` test suite covering initialization, positive arbitrage spreads, and edge cases).
+* **Modular Core:** Object-oriented engine architecture located in `src/bess_optimizer.py`.
