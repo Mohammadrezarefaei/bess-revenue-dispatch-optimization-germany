@@ -1,3 +1,4 @@
+![BESS Engine CI](https://github.com/Mohammadrezarefaei/bess-revenue-dispatch-optimization-germany/actions/workflows/ci.yml/badge.svg)
 # 🔋 BESS Dispatch Optimization & Techno-Economic Financial Modeling (German Day-Ahead Market)
 
 An end-to-end techno-economic simulation, dispatch optimization pipeline, and Discounted Cash Flow (DCF) financial model for a **10 MW / 20 MWh Utility-Scale Battery Energy Storage System (BESS)** operating in the German wholesale electricity market (**EPEX Spot / SMARD**).
