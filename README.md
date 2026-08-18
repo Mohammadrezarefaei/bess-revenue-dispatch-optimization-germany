@@ -2,7 +2,7 @@
 [![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://bess-dispatch-germany.streamlit.app/)
 
 ## 🚀 Live Interactive Demo
-👉 **[Access the Live Streamlit Web App](لینک_استریم‌لیت_خودت)**
+👉 **[Access the Live Streamlit Web App](https://bess-dispatch-germany.streamlit.app/)**
 # 🔋 BESS Dispatch Optimization & Techno-Economic Financial Modeling (German Day-Ahead Market)
 
 An end-to-end techno-economic simulation, dispatch optimization pipeline, and Discounted Cash Flow (DCF) financial model for a **10 MW / 20 MWh Utility-Scale Battery Energy Storage System (BESS)** operating in the German wholesale electricity market (**EPEX Spot / SMARD**).
